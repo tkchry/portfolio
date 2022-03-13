@@ -1,8 +1,8 @@
 baseurl = "https://portfolio.r09i.me/"
 title = "tkchry"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+languagecode = "ja"
+defaultcontentlanguage = "ja"
 
 paginate = 20
 
