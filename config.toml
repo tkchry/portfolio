@@ -1,62 +1,121 @@
 baseurl = "https://portfolio.r09i.me/"
 title = "tkchry"
-theme = "hugo-coder"
+paginate = 5
+theme = "PaperMod"
 languagecode = "ja"
 defaultcontentlanguage = "ja"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+#googleAnalytics = "UA-123-45"
 
-paginate = 20
-
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = ""
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
+#env = "production"
+title = "tkchry"
+description = "ExampleSite description"
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
 author = "Ryo Takeuchi"
-info = "Android Application Developer"
-description = "Ryo Takeuchi's personal website"
-keywords = "blog,developer,personal"
-avatarurl = "images/avatar.png"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
 
-#favicon_32 = "/img/favicon-32x32.png"
-#favicon_16 = "/img/favicon-16x16.png"
+[params.assets]
+favicon = "<link / abs url>"
+favicon16x16 = "<link / abs url>"
+favicon32x32 = "<link / abs url>"
+apple_touch_icon = "<link / abs url>"
+safari_pinned_tab = "<link / abs url>"
 
-since = 2022
+[params.label]
+text = "Home"
 
-enableTwemoji = true
+[params.profileMode]
+enabled = true
+title = "I'm Ryo."
+subtitle = "Android App Developer"
+imageUrl = "images/avatar.png"
+imageWidth = 200
+imageHeight = 200
+imageTitle = "my image"
 
-colorScheme = "auto"
-hidecolorschemetoggle = false
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = "Welcome to my blog"
 
-#customCSS = ["css/custom.css"]
-#customSCSS = ["scss/custom.scss"]
-#customJS = ["js/custom.js"]
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/tkchry"
 
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/tkchry"
 
-# Social links
-[[params.social]]
-name = "Github"
-icon = "fa fa-github fa-2x"
-weight = 1
-url = "https://github.com/tkchry/"
-[[params.social]]
-name = "Twitter"
-icon = "fa fa-twitter fa-2x"
-weight = 2
-url = "https://twitter.com/tkchry/"
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
 
-# Menu links
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+[params.editPost]
+URL = "https://github.com/<path_to_repo>/content"
+Text = "Suggest Changes"
+appendFilePath = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = [ "title", "permalink", "summary", "content" ]
+
 [[menu.main]]
-name = "About"
-weight = 1
-url = "about/"
+identifier = "about"
+name = "about"
+url = "/about"
+weight = 10
+
 [[menu.main]]
-name = "Blog"
-weight = 2
-url  = "posts/"
+identifier = "posts"
+name = "posts"
+url = "/posts/"
+weight = 20
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 40
