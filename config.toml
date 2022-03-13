@@ -38,7 +38,7 @@ showtoc = false
 tocopen = false
 
 [params.assets]
-favicon = "<link / abs url>"
+favicon = "site_icons/icon-72x72.png"
 favicon16x16 = "<link / abs url>"
 favicon32x32 = "<link / abs url>"
 apple_touch_icon = "<link / abs url>"
